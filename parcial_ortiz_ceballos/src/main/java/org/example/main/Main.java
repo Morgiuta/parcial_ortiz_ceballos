@@ -1,4 +1,4 @@
-package org.example;
+package org.example.main;
 
 import java.sql.Connection;
 import java.util.List;
@@ -6,6 +6,11 @@ import java.util.Scanner;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.example.dao.DuenioDao;
+import org.example.dao.MascotaDao;
+import org.example.model.Duenio;
+import org.example.model.Mascota;
+import org.example.util.DataBaseManager;
 
 public class Main {
   private static final Logger logger = LogManager.getLogger(Main.class);
@@ -312,7 +317,7 @@ public class Main {
     }
     System.out.println("Mascotas:");
     for (Mascota m : mascotas) {
-      System.out.println("ID: " + m.getMascotaId() + " | Nombre: " + m.getNombre() + " | Especie: " + m.getEspecie());
+      System.out.println("ID: " + m.getMascotaId() + "  Nombre: " + m.getNombre() + "  Especie: " + m.getEspecie());
     }
     System.out.print("Ingrese el ID de la mascota a modificar: ");
     int idMascota;

@@ -1,4 +1,4 @@
-package org.example;
+package org.example.util;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -16,7 +16,7 @@ public class DataBaseManager {
   private static final String URL = "jdbc:mariadb://localhost:3306/veterinaria";
   //private static final String URL = "jdbc:mysql://localhost:3306/veterinaria";
   private static final String USER = "root";
-  private static final String PASSWORD = "generica";
+  private static final String PASSWORD = "inolvidable";
   private static final Logger logger = LogManager.getLogger(DataBaseManager.class);
 
   public static Connection getConnection() {
