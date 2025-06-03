@@ -43,3 +43,5 @@ private static final String URL = "jdbc:mysql://localhost:3306/veterinaria";
 
 Ademas hay que cambiar el usuario y la contraseña
 
+// En el archivo sql agrego la base de datos por si se quiere agregar manualmente
+
